@@ -26,7 +26,7 @@ def web_search(query: str)->str:
 def scrape_url(url: str)->str:
     """Scrape and return clean text content from a given URL for deeper reading."""
     try:
-        resp = requests.get(url, timeout=8, 
+        resp = requests.get(url, timeout=20, 
                             headers = {
     "User-Agent": (
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
